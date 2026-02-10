@@ -8,7 +8,7 @@ module.exports = {
     app: './src/index.js',
   },
   output: {
-    filename: "main.js",
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, "dist"),
     clean: true,
     assetModuleFilename: 'assets/[name][ext]',
@@ -26,11 +26,6 @@ module.exports = {
       title: 'Production',
     }),
   ],
-  output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    clean: true,
-  },
   module: {
     rules: [
       {
